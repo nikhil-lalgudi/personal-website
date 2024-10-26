@@ -1,92 +1,73 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa';
+
+// Pages
+import Home from './pages/Home';
+import Experience from './pages/Experience';
+import Education from './pages/Education';
+import Projects from './pages/Projects';
+import Blog from './pages/Blog';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      {/* Header */}
-      <header className="bg-white shadow-md">
-        <div className="max-w-7xl mx-auto py-6 px-4">
-          <h1 className="text-3xl font-bold text-gray-900">Nikhil Lalgudi Vaidyanathan</h1>
-          <div className="flex gap-4 mt-2">
-            <a href="https://github.com/nikhil-lalgudi" className="text-gray-600 hover:text-gray-900">
-              <FaGithub size={24} />
-            </a>
-            <a href="https://linkedin.com" className="text-gray-600 hover:text-gray-900">
-              <FaLinkedin size={24} />
-            </a>
+    <Router>
+      <div className="min-h-screen bg-black text-white">
+        <nav className="fixed w-full top-0 bg-black/50 backdrop-blur-sm z-50">
+          <div className="max-w-4xl mx-auto px-4 py-4">
+            <ul className="flex justify-center space-x-8">
+              <li><Link to="/" className="hover:text-gray-300">home</Link></li>
+              <li><Link to="/experience" className="hover:text-gray-300">experience</Link></li>
+              <li><Link to="/education" className="hover:text-gray-300">education</Link></li>
+              <li><Link to="/projects" className="hover:text-gray-300">projects</Link></li>
+              <li><Link to="/blog" className="hover:text-gray-300">blog</Link></li>
+            </ul>
           </div>
-        </div>
-      </header>
+        </nav>
 
-      {/* Main Content */}
-      <main className="max-w-7xl mx-auto py-12 px-4">
-        {/* Projects Section */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2">MinGemma</h3>
-              <p className="text-gray-600 mb-4">
-                A minimalist implementation of the Gemma language model.
-              </p>
-              <a 
-                href="https://github.com/nikhil-lalgudi/minGemma"
-                className="text-blue-600 hover:text-blue-800"
-              >
-                View on GitHub →
-              </a>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2">TraPy</h3>
-              <p className="text-gray-600 mb-4">
-                A Python-based trading and analysis platform.
-              </p>
-              <a 
-                href="https://github.com/nikhil-lalgudi/traPy"
-                className="text-blue-600 hover:text-blue-800"
-              >
-                View on GitHub →
-              </a>
-            </div>
+        <main className="pt-16">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/blog" element={<Blog />} />
+          </Routes>
+        </main>
+
+        <footer className="fixed bottom-4 left-1/2 transform -translate-x-1/2">
+          <div className="flex space-x-6">
+            <motion.a 
+              whileHover={{ scale: 1.1 }}
+              href="https://github.com/nikhil-lalgudi" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-300"
+            >
+              <FaGithub size={20} />
+            </motion.a>
+            <motion.a 
+              whileHover={{ scale: 1.1 }}
+              href="https://medium.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-300"
+            >
+              <FaMedium size={20} />
+            </motion.a>
+            <motion.a 
+              whileHover={{ scale: 1.1 }}
+              href="https://linkedin.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-300"
+            >
+              <FaLinkedin size={20} />
+            </motion.a>
           </div>
-        </section>
-
-        {/* Education & Experience */}
-        <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Education & Experience</h2>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <div className="mb-6">
-              <h3 className="text-xl font-semibold mb-2">Education</h3>
-              <div className="mb-4">
-                <p className="font-medium">Computer Science</p>
-                <p className="text-gray-600">Relevant Coursework:</p>
-                <ul className="list-disc list-inside text-gray-600 ml-4">
-                  <li>EECS 280: Object-Oriented Programming in C++ </li>
-                  <li>EECS 281: Data Structures and Algorithms</li>
-                  <li>EECS 301: Probabilistic Methods & Random Processes </li>
-                  <li>EECS 553: Theoretical Machine Learning* </li>
-                </ul>
-                <p className="font-medium">Honors Mathematics</p>
-                <p className="text-gray-600">Relevant Coursework:</p>
-                 <ul className="list-disc list-inside text-gray-600 ml-4">
-                   <li>Math 217: Abstract Linear Algebra </li>
-                   <li>Math 395: Honors Analysis on Manifolds I (Abstract Manifolds & Measure Theory) </li>
-                   <li>Math 451: Real Analysis </li>
-                   <li>Math 465: Combinatorics & Graph Theory </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      {/* Footer */}
-      <footer className="bg-white mt-12">
-        <div className="max-w-7xl mx-auto py-6 px-4 text-center text-gray-600">
-          © 2024 Nikhil Lalgudi Vaidyanathan. All rights reserved.
-        </div>
-      </footer>
-    </div>
+        </footer>
+      </div>
+    </Router>
   );
 }
 
