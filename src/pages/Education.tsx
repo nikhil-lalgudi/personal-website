@@ -4,25 +4,22 @@ const education = [
   {
     school: "University of Michigan College of Engineering",
     degree: "Bachelor's degree, Computer Science",
-    duration: "2023 - 2026",
-    activities: ["V1 Michigan", "Indian American Student Association", "PERMIAS Michigan"],
     coursework: [
       "EECS 280: Object-Oriented Programming in C++",
       "EECS 281: Data Structures and Algorithms",
       "EECS 301: Probabilistic Methods & Random Processes",
       "EECS 553: (ECE) Theoretical Machine Learning*"
     ],
-    concentration: "Systems + AI concentration"
+    concentration: "Systems + AI concentration. * Indicates graduate-level coursework.",
   },
   {
     school: "University of Michigan",
     degree: "BS/MS, Honors Mathematics",
-    duration: "Sep 2023 - 2026",
     courses: [
-      "Math 395: Honors Analysis on Manifolds (Abstract Manifolds & Measure Theory)",
       "Math 217: Abstract Linear Algebra",
+      "Math 395: Honors Analysis on Manifolds (Abstract Manifolds & Measure Theory)",
+      "MATH 451: Real Analysis",
       "MATH 465: Combinatorics & Graph Theory",
-      "MATH 451: Real Analysis"
     ]
   }
 ];

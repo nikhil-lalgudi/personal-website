@@ -16,11 +16,11 @@ export default function Home() {
         </p>
         
         <p className="text-gray-400 mb-4">
-          spent my childhood in vietnam, singapore, thailand, the phillipines, indonesia, and india
+        statistical methods, HPC, deep reinforcement learning, and building fault-tolerant systems. spent my childhood in vietnam, singapore, thailand, the phillipines, indonesia, and india. 
         </p>
 
          <p className="text-gray-400 mb-4">
-          feel free to contact me at: nikhillv@umich.edu
+          feel free to contact me at: nikhillv@umich.edu, love chatting about cool ideas
         </p>
         
       </motion.div>

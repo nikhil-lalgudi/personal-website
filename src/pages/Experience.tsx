@@ -5,7 +5,7 @@ const experiences = [
     company: "Edelweiss Financial Services Limited",
     role: "Quantitative Research Intern",
     duration: "May 2024 - Aug 2024 · 4 mos",
-    location: "On-site",
+    location: "Mumbai, Maharashtra, India",
     description: "Alpha Research - entry/exit signals, pricing/volatility models, and heteroskedastic noise (domestic index options HFT/MFT algo dev)",
     skills: ["Time Series Analysis"]
   },
@@ -13,11 +13,18 @@ const experiences = [
     company: "Fledge",
     role: "Software Engineer & Product Manager",
     duration: "Jan 2024 - May 2024 · 5 mos",
+    location: "Hanover, New Hampshire, United States",
+    description: "AI powered networking CRM for students, gofledge.net",
+    skills: ["Prompt Engineering", "Front-End Development"]
+  },
+  {
+    company: "Davidson College",
+    role: "Software Engineer & Product Manager",
+    duration: "Jan 2024 - May 2024 · 5 mos",
     location: "Hanover, New Hampshire, United States · Remote",
     description: "AI powered networking CRM for students, gofledge.net",
     skills: ["Prompt Engineering", "Front-End Development"]
   },
-  // Add more experiences as needed
 ];
 
 export default function Experience() {
