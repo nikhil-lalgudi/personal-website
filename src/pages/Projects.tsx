@@ -11,6 +11,11 @@ const projects = [
     title: "TraPy",
     description: "The most comprehensive Python Library for technical analysis, stochastic realizations, and differential equations solvers with GPU support and efficient sensitivity analysis",
     github: "https://github.com/nikhil-lalgudi/traPy"
+  },
+  {
+    title: "Advanced-DS",
+    description: "Implementations and explanations of various advanced and probabilistic data structures compatible to C++ 17 and above.",
+    github: "https://github.com/nikhil-lalgudi/Advanced-DS"
   }
 ];
 

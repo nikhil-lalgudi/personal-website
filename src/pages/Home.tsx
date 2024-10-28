@@ -20,7 +20,7 @@ export default function Home() {
         </p>
 
         <p className="text-gray-400 mb-4">
-        spent my childhood in vietnam, singapore, thailand, the philippines, indonesia, and india. prev experience in HFT research and ML development/training.
+        grew up in vietnam, singapore, thailand, the philippines, indonesia, and india. prev experience in HFT research at a billion dollar market maker and ML development/training.
         </p>
 
          <p className="text-gray-400 mb-4">

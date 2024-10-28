@@ -5,6 +5,7 @@ const education = [
     school: "University of Michigan College of Engineering",
     degree: "Bachelor's degree, Computer Science",
     coursework: [
+      "EECS 203: Discrete Math",
       "EECS 280: Object-Oriented Programming in C++",
       "EECS 281: Data Structures and Algorithms",
       "EECS 301: Probabilistic Methods & Random Processes",
@@ -59,7 +60,7 @@ export default function Education() {
                   
                   {edu.coursework && (
                     <div className="mb-4">
-                      <p className="text-gray-300 font-medium">Relevant Coursework:</p>
+                      <p className="text-gray-300 font-medium"> Courses:</p>
                       <ul className="list-disc list-inside text-gray-400">
                         {edu.coursework.map((course, i) => (
                           <li key={i}>{course}</li>
