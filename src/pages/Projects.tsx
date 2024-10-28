@@ -4,12 +4,12 @@ import { FaGithub } from 'react-icons/fa';
 const projects = [
   {
     title: "MinGemma",
-    description: "A minimalist implementation of the Gemma language model.",
+    description: "The most lightweight and efficient repository for training and fine-tuning Google’s Gemma models.",
     github: "https://github.com/nikhil-lalgudi/minGemma"
   },
   {
     title: "TraPy",
-    description: "A Python-based trading and analysis platform.",
+    description: "The most comprehensive Python Library for technical analysis, stochastic realizations, and differential equations solvers with GPU support and efficient sensitivity analysis",
     github: "https://github.com/nikhil-lalgudi/traPy"
   }
 ];

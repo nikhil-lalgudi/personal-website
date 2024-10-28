@@ -19,8 +19,8 @@ const experiences = [
   },
   {
     company: "Davidson College",
-    role: "Software Engineer & Product Manager",
-    duration: "Jan 2024 - May 2024 · 5 mos",
+    role: " Mathematics and Computer Science Researcher.",
+    duration: "June 2022 - October 2022 · 5 mos",
     location: "Hanover, New Hampshire, United States · Remote",
     description: "AI powered networking CRM for students, gofledge.net",
     skills: ["Prompt Engineering", "Front-End Development"]

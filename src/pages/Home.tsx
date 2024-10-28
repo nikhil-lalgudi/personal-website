@@ -16,7 +16,11 @@ export default function Home() {
         </p>
         
         <p className="text-gray-400 mb-4">
-        statistical methods, HPC, deep reinforcement learning, and building fault-tolerant systems. spent my childhood in vietnam, singapore, thailand, the phillipines, indonesia, and india. 
+        interested in statistical methods, HPC, deep reinforcement learning, and building fault-tolerant systems. 
+        </p>
+
+        <p className="text-gray-400 mb-4">
+        spent my childhood in vietnam, singapore, thailand, the philippines, indonesia, and india. prev experience in HFT research and ML development/training.
         </p>
 
          <p className="text-gray-400 mb-4">

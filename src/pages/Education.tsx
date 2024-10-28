@@ -8,9 +8,13 @@ const education = [
       "EECS 280: Object-Oriented Programming in C++",
       "EECS 281: Data Structures and Algorithms",
       "EECS 301: Probabilistic Methods & Random Processes",
-      "EECS 553: (ECE) Theoretical Machine Learning*"
+      "EECS 370: Computer Organization (W25)",
+      "EECS 491: Distributed Systems (W25)",
+      "EECS 553: (ECE) Theoretical Machine Learning*",
+      "EECS 598: Advanced Approximation Algorithms* (W25)",
+      "Stats 601: Advanced Statistical Learning (W25)",
     ],
-    concentration: "Systems + AI concentration. * Indicates graduate-level coursework.",
+    concentration: "Systems + AI concentration.",
   },
   {
     school: "University of Michigan",
@@ -18,8 +22,13 @@ const education = [
     courses: [
       "Math 217: Abstract Linear Algebra",
       "Math 395: Honors Analysis on Manifolds (Abstract Manifolds & Measure Theory)",
-      "MATH 451: Real Analysis",
-      "MATH 465: Combinatorics & Graph Theory",
+      "Math 451: Real Analysis",
+      "Math 465: Combinatorics & Graph Theory",
+      "Math 597: Real Analysis II - Measure Theory (W25)",
+    ],
+    cognateCourses: [
+      "EECS 553: (ECE) Theoretical Machine Learning*",
+      "Stats 601: Advanced Statistical Learning* (W25)",
     ]
   }
 ];
@@ -47,14 +56,6 @@ export default function Education() {
                 <div>
                   <h3 className="text-xl font-semibold">{edu.school}</h3>
                   <p className="text-gray-400">{edu.degree}</p>
-                  <p className="text-gray-500 text-sm mb-4">{edu.duration}</p>
-                  
-                  {edu.activities && (
-                    <div className="mb-4">
-                      <p className="text-gray-300 font-medium">Activities and Societies:</p>
-                      <p className="text-gray-400">{edu.activities.join(", ")}</p>
-                    </div>
-                  )}
                   
                   {edu.coursework && (
                     <div className="mb-4">
@@ -64,6 +65,7 @@ export default function Education() {
                           <li key={i}>{course}</li>
                         ))}
                       </ul>
+                      <p className="text-gray-400 text-sm mt-2">* Indicates a Graduate level course</p>
                     </div>
                   )}
                   
@@ -72,10 +74,21 @@ export default function Education() {
                   )}
                   
                   {edu.courses && (
-                    <div>
+                    <div className="mb-4">
                       <p className="text-gray-300 font-medium">Courses:</p>
                       <ul className="list-disc list-inside text-gray-400">
                         {edu.courses.map((course, i) => (
+                          <li key={i}>{course}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {edu.cognateCourses && (
+                    <div>
+                      <p className="text-gray-300 font-medium">Cognate Courses:</p>
+                      <ul className="list-disc list-inside text-gray-400">
+                        {edu.cognateCourses.map((course, i) => (
                           <li key={i}>{course}</li>
                         ))}
                       </ul>
