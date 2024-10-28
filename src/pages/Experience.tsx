@@ -4,26 +4,22 @@ const experiences = [
   {
     company: "Edelweiss Financial Services Limited",
     role: "Quantitative Research Intern",
-    duration: "May 2024 - Aug 2024 · 4 mos",
-    location: "Mumbai, Maharashtra, India",
-    description: "Alpha Research - entry/exit signals, pricing/volatility models, and heteroskedastic noise (domestic index options HFT/MFT algo dev)",
-    skills: ["Time Series Analysis"]
+    duration: "May 2024 - Aug 2024",
   },
   {
     company: "Fledge",
     role: "Software Engineer & Product Manager",
-    duration: "Jan 2024 - May 2024 · 5 mos",
-    location: "Hanover, New Hampshire, United States",
-    description: "AI powered networking CRM for students, gofledge.net",
-    skills: ["Prompt Engineering", "Front-End Development"]
+    duration: "Jan 2024 - May 2024",
   },
   {
     company: "Davidson College",
     role: " Mathematics and Computer Science Researcher.",
-    duration: "June 2022 - October 2022 · 5 mos",
-    location: "Hanover, New Hampshire, United States · Remote",
-    description: "AI powered networking CRM for students, gofledge.net",
-    skills: ["Prompt Engineering", "Front-End Development"]
+    duration: "June 2022 - October 2022",
+  },
+  {
+    company: "Rekosistem",
+    role: "Data Science Intern",
+    duration: "June 2022 - August 2022",
   },
 ];
 
@@ -49,15 +45,6 @@ export default function Experience() {
               <h3 className="text-xl font-semibold">{exp.role}</h3>
               <p className="text-gray-400">{exp.company}</p>
               <p className="text-gray-500 text-sm">{exp.duration}</p>
-              <p className="text-gray-500 text-sm mb-4">{exp.location}</p>
-              <p className="text-gray-300 mb-4">{exp.description}</p>
-              <div className="flex flex-wrap gap-2">
-                {exp.skills.map((skill, i) => (
-                  <span key={i} className="bg-zinc-800 px-3 py-1 rounded-full text-sm">
-                    {skill}
-                  </span>
-                ))}
-              </div>
             </motion.div>
           ))}
         </div>

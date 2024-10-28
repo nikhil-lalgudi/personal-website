@@ -24,7 +24,7 @@ export default function Home() {
         </p>
 
          <p className="text-gray-400 mb-4">
-          feel free to contact me at: nikhillv@umich.edu, love chatting about cool ideas
+          feel free to contact me at: <a href="mailto:nikhillv@umich.edu" className="underline">nikhillv@umich.edu</a>, love chatting about cool ideas
         </p>
         
       </motion.div>
