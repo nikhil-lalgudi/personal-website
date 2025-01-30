@@ -57,7 +57,7 @@ function App() {
             </motion.a>
             <motion.a 
               whileHover={{ scale: 1.1 }}
-              href="www.linkedin.com/in/nikhil-vaidyanathan/" 
+              href="https://www.linkedin.com/in/nikhil-vaidyanathan/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300"

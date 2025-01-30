@@ -12,7 +12,6 @@ const education = [
       "EECS 370: Computer Organization",
       "EECS 491: Distributed Systems",
       "EECS 553: (ECE) Theoretical Machine Learning*",
-      "Stats 601: Advanced Statistical Learning",
     ],
     concentration: "Systems + AI concentration.",
   },
@@ -24,12 +23,10 @@ const education = [
       "Math 395: Honors Analysis on Manifolds (Abstract Manifolds & Measure Theory)",
       "Math 451: Real Analysis",
       "Math 465: Combinatorics & Graph Theory",
-      "Math 566: Combinatorial Theory",
-      "Math 597: Real Analysis II - Measure Theory",
+      "Math 626: Stochastic Analysis/Control",
     ],
     cognateCourses: [
       "EECS 553: (ECE) Theoretical Machine Learning*",
-      "Stats 601: Advanced Statistical Learning*",
     ]
   }
 ];

@@ -2,6 +2,11 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
+    company: "Qube Research & Technologies",
+    role: "Quantitative Research Intern",
+    duration: "May 2025 - Aug 2025",
+  },
+  {
     company: "Edelweiss Financial Services Limited",
     role: "Quantitative Research Intern",
     duration: "May 2024 - Aug 2024",
