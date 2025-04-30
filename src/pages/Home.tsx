@@ -14,13 +14,17 @@ export default function Home() {
         <p className="text-gray-400 mb-4">
           engineer. mathematician. problem solver. cs + honors math @umich.
         </p>
+
+        <p className="text-gray-400 mb-4">
+        currently an alpha/execution researcher at the fastest growing hedge fund in the world,
+        </p>
         
         <p className="text-gray-400 mb-4">
         interested in statistical methods, HPC, deep reinforcement learning, and building fault-tolerant systems. 
         </p>
 
         <p className="text-gray-400 mb-4">
-        grew up in vietnam, singapore, thailand, the philippines, indonesia, and india. prev experience in HFT research at a billion dollar market maker and ML development/training.
+        grew up in vietnam, singapore, thailand, the philippines, indonesia, and india.
         </p>
 
          <p className="text-gray-400 mb-4">
