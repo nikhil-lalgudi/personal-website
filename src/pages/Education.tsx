@@ -8,7 +8,6 @@ const education = [
       "STATS 600: Regression Analysis",
       "STATS 610: Statistical Inference I",
       "STATS/MATH 626: Stochastic Analysis/Control",
-
     ],
   },
   {
@@ -82,7 +81,6 @@ export default function Education() {
                             </div>
                           ))}
                         </div>
-                        <p className="text-gray-500 text-sm mt-3">* Indicates a Graduate level course</p>
                       </div>
                     )}
                     
